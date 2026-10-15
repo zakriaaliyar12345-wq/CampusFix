@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand -->
+    <color name="primary">#1565C0</color>
+    <color name="primary_dark">#0D47A1</color>
+    <color name="secondary">#00897B</color>
+    <color name="error">#B3261E</color>
+    <color name="on_primary">#FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+
+    <!-- Light theme surfaces -->
+    <color name="background_light">#F6F8FA</color>
+    <color name="surface_light">#FFFFFF</color>
+    <color name="surface_variant_light">#E8EAED</color>
+    <color name="on_surface">#1B1C1E</color>
+    <color name="on_surface_variant">#44474F</color>
+
+    <!-- Report status colours (used identically in both themes) -->
+    <color name="status_submitted">#1565C0</color>
+    <color name="status_in_progress">#F9A825</color>
+    <color name="status_resolved">#2E7D32</color>
+    <color name="status_rejected">#C62828</color>
+
+    <!-- Priority colours -->
+    <color name="priority_low">#607D8B</color>
+    <color name="priority_medium">#F9A825</color>
+    <color name="priority_high">#EF6C00</color>
+    <color name="priority_critical">#B3261E</color>
+
+    <!-- Accents -->
+    <color name="sample_badge">#7E57C2</color>
+    <color name="ic_launcher_background">#0D47A1</color>
+</resources>

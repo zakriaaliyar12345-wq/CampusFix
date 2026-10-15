@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Paths exposed by the FileProvider. Only the private cache sub-directory
+     used for captured report photos is shared — never app-private roots. -->
+<paths>
+    <cache-path
+        name="report_photos"
+        path="photos/" />
+</paths>

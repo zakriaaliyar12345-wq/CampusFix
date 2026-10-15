@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Used only by the optional connectivity demonstration (topic 07.2).
+         Every core feature works offline without any network access. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- Topic 08.1: posting a notification now needs a runtime grant on
+         Android 13+. Requested from the Settings demo screen. -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <!-- Topic 08.2: exact alarms (setExactAndAllowWhileIdle) on Android 12+.
+         The demo falls back to inexact alarms if this is revoked. -->
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+
+    <application
+        android:name=".CampusFixApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CampusFix">
+
+        <!-- Main dashboard (launcher) -->
+        <activity
+            android:name=".ui.dashboard.DashboardActivity"
+            android:exported="true"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.settings.SettingsActivity"
+            android:exported="false"
+            android:label="@string/settings_title"
+            android:parentActivityName=".ui.dashboard.DashboardActivity" />
+
+        <activity
+            android:name=".ui.about.AboutActivity"
+            android:exported="false"
+            android:label="@string/about_title"
+            android:parentActivityName=".ui.dashboard.DashboardActivity" />
+
+        <!-- Reporting flow: list -> detail -> create/edit (topics 02.1, 04.4) -->
+        <activity
+            android:name=".ui.report.ReportListActivity"
+            android:exported="false"
+            android:label="@string/list_title"
+            android:parentActivityName=".ui.dashboard.DashboardActivity" />
+
+        <activity
+            android:name=".ui.report.CreateReportActivity"
+            android:exported="false"
+            android:label="@string/create_title"
+            android:parentActivityName=".ui.report.ReportListActivity"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".ui.report.ReportDetailActivity"
+            android:exported="false"
+            android:label="@string/detail_title"
+            android:parentActivityName=".ui.report.ReportListActivity" />
+
+        <activity
+            android:name=".ui.report.StatisticsActivity"
+            android:exported="false"
+            android:label="@string/stats_title"
+            android:parentActivityName=".ui.dashboard.DashboardActivity" />
+
+        <!-- Learning Lab: list -> reader -> quiz (M2) -->
+        <activity
+            android:name=".ui.learning.LearningActivity"
+            android:exported="false"
+            android:label="@string/nav_learning_lab"
+            android:parentActivityName=".ui.dashboard.DashboardActivity" />
+
+        <activity
+            android:name=".ui.learning.LessonDetailActivity"
+            android:exported="false"
+            android:label="@string/nav_learning_lab"
+            android:parentActivityName=".ui.learning.LearningActivity" />
+
+        <activity
+            android:name=".ui.learning.QuizActivity"
+            android:exported="false"
+            android:label="@string/lesson_start_quiz"
+            android:parentActivityName=".ui.learning.LessonDetailActivity" />
+
+        <!-- Background/system demos: started service (07.4), manifest
+             receivers for alarms (08.2) and the in-app status broadcast
+             (07.3). exported=false: only this app can reach them. -->
+        <service
+            android:name=".data.sync.DemoSyncService"
+            android:exported="false" />
+
+        <receiver
+            android:name=".data.alarm.ReminderReceiver"
+            android:exported="false" />
+
+        <receiver
+            android:name=".data.broadcast.ReportStatusReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action
+                    android:name="com.example.campusfix.ACTION_REPORT_STATUS_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Topic 04.3: menu resource inflated with PopupMenu on the Sort button. -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/action_sort_newest"
+            android:checked="true"
+            android:title="@string/sort_newest" />
+        <item
+            android:id="@+id/action_sort_priority"
+            android:title="@string/sort_priority" />
+    </group>
+</menu>

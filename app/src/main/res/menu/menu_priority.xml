@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Topic 04.3: priority picker shown as a checkable popup menu. -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/action_priority_all"
+            android:checked="true"
+            android:title="@string/priority_all" />
+        <item
+            android:id="@+id/action_priority_low"
+            android:title="@string/priority_low" />
+        <item
+            android:id="@+id/action_priority_medium"
+            android:title="@string/priority_medium" />
+        <item
+            android:id="@+id/action_priority_high"
+            android:title="@string/priority_high" />
+        <item
+            android:id="@+id/action_priority_critical"
+            android:title="@string/priority_critical" />
+    </group>
+</menu>

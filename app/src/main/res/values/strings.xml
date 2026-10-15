@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CampusFix</string>
+
+    <!-- Dashboard -->
+    <string name="dashboard_title">CampusFix</string>
+    <string name="dashboard_subtitle">Campus Problem Reporting &amp; Learning Hub</string>
+    <string name="section_reporting">REPORTING</string>
+    <string name="section_learning">LEARNING</string>
+    <string name="section_app">APP</string>
+
+    <!-- Honesty disclaimer (shown wherever demo data appears) -->
+    <string name="disclaimer_title">Local demonstration data</string>
+    <string name="disclaimer_body">Reports are stored only on this device. Nothing is sent to any university or campus system, and no real repair is requested.</string>
+
+    <!-- Navigation -->
+    <string name="nav_create_report">Create Report</string>
+    <string name="nav_all_reports">All Reports</string>
+    <string name="nav_statistics">Statistics</string>
+    <string name="nav_learning_lab">Android Learning Lab</string>
+    <string name="nav_bookmarks">Saved Lessons &amp; Bookmarks</string>
+    <string name="nav_settings">Settings</string>
+    <string name="nav_about">About</string>
+
+    <!-- Common actions -->
+    <string name="action_back">Back</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_save">Save</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_search">Search</string>
+    <string name="action_share">Share</string>
+    <string name="action_ok">OK</string>
+
+    <!-- Empty / loading / error states -->
+    <string name="state_empty">Nothing here yet</string>
+    <string name="state_loading">Loading…</string>
+    <string name="state_error">Something went wrong</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_section_appearance">APPEARANCE</string>
+    <string name="settings_section_notifications">NOTIFICATIONS</string>
+    <string name="settings_theme">Theme</string>
+    <string name="settings_theme_light">Light</string>
+    <string name="settings_theme_dark">Dark</string>
+    <string name="settings_theme_system">Follow system</string>
+    <string name="settings_notifications">Status change notifications</string>
+    <string name="settings_notifications_hint">Show a local notification when a report status changes (demo) or a reminder is due.</string>
+    <string name="settings_notifications_on">Notifications enabled</string>
+    <string name="settings_notifications_off">Notifications disabled</string>
+
+    <!-- Notification channel (08.1) -->
+    <string name="notif_channel_name">Reminders &amp; updates</string>
+    <string name="notif_channel_description">Report status changes, demo reminders, and background sync results.</string>
+
+    <!-- Background/system demo section (07.2, 07.3, 07.4, 08.1, 08.2, 08.3) -->
+    <string name="demo_section_header">BACKGROUND &amp; SYSTEM DEMOS</string>
+    <string name="demo_online">Network: online</string>
+    <string name="demo_offline">Network: offline</string>
+    <string name="demo_test_notification">Test notification (08.1)</string>
+    <string name="demo_run_service">Sync service (07.4)</string>
+    <string name="demo_run_worker">WorkManager job (08.3)</string>
+    <string name="demo_schedule_periodic">15-min recurring job</string>
+    <string name="demo_cancel_periodic">Cancel recurring job</string>
+    <string name="demo_alarm">Remind in 10 s</string>
+    <string name="demo_alarm_cancel">Cancel reminder</string>
+    <string name="demo_test_notification_title">CampusFix test</string>
+    <string name="demo_test_notification_body">A local notification built by NotificationHelper: channel (08.1) plus the Settings switch and Android 13 permission.</string>
+    <string name="demo_test_notification_ok">Test notification posted (check the shade)</string>
+    <string name="demo_permission_needed">Allow notifications in the system prompt, then tap again</string>
+    <string name="demo_notifications_off">Turn on the Notifications switch above first</string>
+    <string name="demo_service_started">Sync service started: 3 steps, then stopSelf()</string>
+    <string name="demo_service_title">Sync service finished</string>
+    <string name="demo_service_body">DemoSyncService ran three background steps and stopped itself.</string>
+    <string name="demo_worker_enqueued">WorkManager job enqueued (CONNECTED constraint)</string>
+    <string name="demo_worker_title">WorkManager sync ran</string>
+    <string name="demo_worker_body">SyncWorker completed a one-time job under WorkManager constraints.</string>
+    <string name="demo_periodic_scheduled">Recurring sync scheduled: every 15 min, unmetered + charging</string>
+    <string name="demo_periodic_cancelled">Recurring sync cancelled</string>
+    <string name="demo_alarm_scheduled_exact">Reminder set for 10 s (exact alarm)</string>
+    <string name="demo_alarm_scheduled_inexact">Reminder set for 10 s (inexact alarm fallback)</string>
+    <string name="demo_alarm_cancelled">Reminder cancelled</string>
+    <string name="demo_alarm_failed">Alarm service unavailable</string>
+    <string name="demo_alarm_title">CampusFix reminder</string>
+    <string name="demo_alarm_body">Your 10-second demo reminder fired (AlarmManager, 08.2).</string>
+    <string name="demo_broadcast_title">Report status changed</string>
+    <string name="demo_broadcast_body">Report #%1$d is now: %2$s</string>
+
+    <!-- About -->
+    <string name="about_title">About</string>
+    <string name="about_version">Version %1$s</string>
+    <string name="about_purpose_title">Purpose</string>
+    <string name="about_purpose_body">CampusFix is an educational Android application that demonstrates how students could report campus problems (broken equipment, Wi-Fi outages, cleanliness issues) and track their status — while teaching the Android concepts used to build it.</string>
+    <string name="about_honesty_title">Demonstration only</string>
+    <string name="about_honesty_body">All reports, status changes, statistics and reminders are local demonstrations stored on this device. There is no backend, no campus administration integration, and no real repair process.</string>
+    <string name="about_offline_title">Offline by design</string>
+    <string name="about_offline_body">Core features — creating, editing, searching and tracking reports, statistics, and the Learning Lab — work fully without an internet connection.</string>
+
+    <!-- Report statuses -->
+    <string name="status_submitted">Submitted</string>
+    <string name="status_in_progress">In Progress</string>
+    <string name="status_resolved">Resolved</string>
+    <string name="status_rejected">Rejected</string>
+    <string name="status_all">All</string>
+
+    <!-- Report categories -->
+    <string name="category_classroom_equipment">Classroom equipment</string>
+    <string name="category_furniture">Furniture</string>
+    <string name="category_wifi">Wi-Fi / Network</string>
+    <string name="category_projector">Projector / AV</string>
+    <string name="category_cleanliness">Cleanliness</string>
+    <string name="category_electrical">Electrical</string>
+    <string name="category_other">Other</string>
+    <string name="category_all">All categories</string>
+
+    <!-- Priorities -->
+    <string name="priority_low">Low</string>
+    <string name="priority_medium">Medium</string>
+    <string name="priority_high">High</string>
+    <string name="priority_critical">Critical</string>
+    <string name="priority_all">All priorities</string>
+
+    <!-- Validation messages -->
+    <string name="error_title_required">A title is required.</string>
+    <string name="error_title_too_short">Title must be at least 4 characters.</string>
+    <string name="error_title_too_long">Title must be 80 characters or fewer.</string>
+    <string name="error_description_required">A description is required.</string>
+    <string name="error_description_too_short">Describe the problem in at least 10 characters.</string>
+    <string name="error_description_too_long">Description must be 2000 characters or fewer.</string>
+    <string name="error_location_required">A location is required.</string>
+    <string name="error_location_too_long">Location must be 120 characters or fewer.</string>
+
+    <!-- Create / edit report -->
+    <string name="create_title">Create Report</string>
+    <string name="edit_title">Edit Report</string>
+    <string name="field_title">Title</string>
+    <string name="field_title_hint">e.g. Projector won\'t turn on</string>
+    <string name="field_category">Category</string>
+    <string name="field_category_hint">Choose a category</string>
+    <string name="field_description">Description</string>
+    <string name="field_description_hint">What is broken, where exactly, and since when?</string>
+    <string name="field_location">Location</string>
+    <string name="field_location_hint">e.g. Building B, Room 214</string>
+    <string name="field_priority">Priority</string>
+    <string name="photo_section">PHOTO (OPTIONAL)</string>
+    <string name="photo_take">Take photo</string>
+    <string name="photo_pick">Choose from gallery</string>
+    <string name="photo_remove">Remove photo</string>
+    <string name="photo_hint">A photo is stored privately on this device with the report.</string>
+    <string name="report_saved">Report saved on this device</string>
+    <string name="report_updated">Report updated</string>
+    <string name="report_deleted">Report deleted</string>
+    <string name="save_report">Save report</string>
+    <string name="saving">Saving…</string>
+    <string name="discard_changes_title">Discard changes?</string>
+    <string name="discard_changes_body">Your edits have not been saved yet.</string>
+    <string name="discard_changes_confirm">Discard</string>
+
+    <!-- Report list -->
+    <string name="list_title">All Reports</string>
+    <string name="search_hint">Search title, description or location…</string>
+    <string name="filter_category">Category</string>
+    <string name="filter_priority">Priority</string>
+    <string name="sort_label">Sort</string>
+    <string name="sort_newest">Newest first</string>
+    <string name="sort_priority">Most urgent first</string>
+    <string name="list_empty_title">No reports yet</string>
+    <string name="list_empty_body">Create your first campus report, or clear the active filters.</string>
+    <string name="list_empty_clear_filters">Clear filters</string>
+    <string name="list_no_matches_title">No matches</string>
+    <string name="list_no_matches_body">Nothing matches the current search and filters.</string>
+    <string name="list_total_count">%1$d reports</string>
+    <string name="badge_sample">SAMPLE</string>
+    <string name="badge_yours">YOURS</string>
+
+    <!-- Report detail -->
+    <string name="detail_title">Report Details</string>
+    <string name="detail_created">Created %1$s</string>
+    <string name="detail_updated">Updated %1$s</string>
+    <string name="detail_description">DESCRIPTION</string>
+    <string name="detail_location">LOCATION</string>
+    <string name="detail_history">STATUS HISTORY</string>
+    <string name="detail_actions">ACTIONS</string>
+    <string name="detail_simulate_status">Simulate status change (demo)</string>
+    <string name="detail_simulate_hint">This app has no backend: changing the status here only updates local demo data and adds a history entry.</string>
+    <string name="detail_photo">ATTACHED PHOTO</string>
+    <string name="detail_no_photo">No photo attached</string>
+    <string name="detail_delete_title">Delete this report?</string>
+    <string name="detail_delete_body">The report and its status history will be permanently removed from this device.</string>
+    <string name="detail_share">Share details</string>
+    <string name="detail_open_map">Open in maps</string>
+    <string name="detail_not_found">This report no longer exists.</string>
+    <string name="history_none">No status changes recorded yet.</string>
+    <string name="history_simulated">Simulated status change (demo)</string>
+
+    <!-- Statistics -->
+    <string name="stats_title">Statistics</string>
+    <string name="stats_total">Total reports</string>
+    <string name="stats_breakdown_status">BY STATUS</string>
+    <string name="stats_breakdown_category">BY CATEGORY</string>
+    <string name="stats_breakdown_priority">BY PRIORITY</string>
+    <string name="stats_sample_note">%1$d of %2$d rows are seeded sample data.</string>
+    <string name="stats_empty_title">Not enough data</string>
+    <string name="stats_empty_body">Create a few reports and their statistics will appear here.</string>
+
+    <!-- Learning Lab -->
+    <string name="learning_progress_count">%1$d of %2$d lessons completed</string>
+    <string name="learning_filter_all">All lessons</string>
+    <string name="learning_filter_bookmarks">Bookmarked</string>
+    <string name="learning_filter_completed">Completed</string>
+    <string name="learning_badge_completed">COMPLETED</string>
+    <string name="learning_badge_bookmark">BOOKMARKED</string>
+    <string name="learning_best_score">Quiz best: %1$d/%2$d</string>
+    <string name="learning_quiz_not_attempted">Quiz not attempted yet</string>
+    <string name="learning_empty_title">No lessons</string>
+    <string name="learning_empty_body">The course catalog could not be loaded.</string>
+    <string name="learning_empty_bookmarks_title">No bookmarks yet</string>
+    <string name="learning_empty_bookmarks_body">Open a lesson and tap \u201cSave bookmark\u201d to keep it here.</string>
+    <string name="learning_empty_completed_title">Nothing completed yet</string>
+    <string name="learning_empty_completed_body">Finish a lesson or score 60% on its quiz and it appears here.</string>
+
+    <!-- Lesson reader -->
+    <string name="lesson_not_found">This lesson no longer exists.</string>
+    <string name="lesson_section_body">LESSON</string>
+    <string name="lesson_section_exercise">PRACTICE EXERCISE</string>
+    <string name="lesson_bookmark_add">Save bookmark</string>
+    <string name="lesson_bookmark_remove">Remove bookmark</string>
+    <string name="lesson_mark_complete">Mark as completed</string>
+    <string name="lesson_mark_incomplete">Mark as not completed</string>
+    <string name="lesson_start_quiz">Take the quiz</string>
+
+    <!-- Lesson quiz -->
+    <string name="quiz_progress">Question %1$d of %2$d</string>
+    <string name="quiz_submit">Submit answer</string>
+    <string name="quiz_next_question">Next question</string>
+    <string name="quiz_see_results">See results</string>
+    <string name="quiz_select_answer">Choose an answer first.</string>
+    <string name="quiz_answer_correct">Correct</string>
+    <string name="quiz_answer_incorrect">Not quite</string>
+    <string name="quiz_result_score">%1$d / %2$d</string>
+    <string name="quiz_result_pass">Passed — this lesson is now marked complete.</string>
+    <string name="quiz_result_fail">You need 60% to pass. Review the lesson and try again.</string>
+    <string name="quiz_retry">Try again</string>
+    <string name="quiz_done">Back to lesson</string>
+</resources>

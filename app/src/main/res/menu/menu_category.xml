@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Topic 04.3: category picker shown as a checkable popup menu. -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/action_category_all"
+            android:checked="true"
+            android:title="@string/category_all" />
+        <item
+            android:id="@+id/action_category_classroom_equipment"
+            android:title="@string/category_classroom_equipment" />
+        <item
+            android:id="@+id/action_category_furniture"
+            android:title="@string/category_furniture" />
+        <item
+            android:id="@+id/action_category_wifi"
+            android:title="@string/category_wifi" />
+        <item
+            android:id="@+id/action_category_projector"
+            android:title="@string/category_projector" />
+        <item
+            android:id="@+id/action_category_cleanliness"
+            android:title="@string/category_cleanliness" />
+        <item
+            android:id="@+id/action_category_electrical"
+            android:title="@string/category_electrical" />
+        <item
+            android:id="@+id/action_category_other"
+            android:title="@string/category_other" />
+    </group>
+</menu>
